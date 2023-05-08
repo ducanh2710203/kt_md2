@@ -35,6 +35,7 @@ do {
             2. searchStudentByName
             3. updateStudent
             4. deleteStudent
+            0. out
 `)
     let option = +readlineSync.question("nhap (1/4): ")
     switch (option) {
@@ -61,8 +62,6 @@ do {
             let questionClassName = readlineSync.question("nhap: ")
             if (questionClassName==1){
                 editClassName = "class A"
-            }else {
-                editClassName = "class B"
             }            let editHomeTown = readlineSync.question("homeTown: ")
             let editScore = +readlineSync.question("score: ")
             let editHobbies = readlineSync.question("hobbies: ")
