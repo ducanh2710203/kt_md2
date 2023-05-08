@@ -12,7 +12,7 @@ for (var i = 0; i < nunStudent; i++) {
     var name_1 = readlineSync.question("name: ");
     console.log(" className\n    1.l\u1EDBp A\n    2.l\u1EDBp B                \n    ");
     var className = void 0;
-    var questionClassName = readlineSync.question("nhập: ");
+    var questionClassName = readlineSync.question("nhap: ");
     if (questionClassName == 1) {
         className = "class A";
     }
@@ -26,7 +26,7 @@ for (var i = 0; i < nunStudent; i++) {
     managementStudent.addStudent(studentNew);
 }
 do {
-    console.log("\n            menu\n            1. displayStudents\n            2. searchStudentByName\n            3. updateStudent\n            4. deleteStudent\n");
+    console.log("\n            menu\n            1. displayStudents\n            2. searchStudentByName\n            3. updateStudent\n            4. deleteStudent\n            0. out\n");
     var option = +readlineSync.question("nhap (1/4): ");
     switch (option) {
         case 1: {
@@ -44,7 +44,12 @@ do {
             var findId = readlineSync.question("nhap id sinh vien muon sua: ");
             var editId = readlineSync.question("id: ");
             var editName = readlineSync.question("name: ");
-            var editClassName = readlineSync.question("className: ");
+            console.log(" className\n    1.l\u1EDBp A\n    2.l\u1EDBp B                \n    ");
+            var editClassName = void 0;
+            var questionClassName = readlineSync.question("nhap: ");
+            if (questionClassName == 1) {
+                editClassName = "class A";
+            }
             var editHomeTown = readlineSync.question("homeTown: ");
             var editScore = +readlineSync.question("score: ");
             var editHobbies = readlineSync.question("hobbies: ");
